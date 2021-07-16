@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myTodo | Create Todo</title>
+    <link rel="stylesheet" href="createtodo.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="">
+        <h1>myTodo</h1>
+      </a>
+      <div class="nav-items">
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li class="current"><a href="createtodo.html">Create Todo</a></li>
+          <li><a href="secondTodo.html">My Todos</a></li>
+        </ul>
+      </div>
+    </div>
+    <h3>Create Todo</h3>
+    <div class="container">
+      <form action="">
+        <div class="form-control">
+          <div class="form-input">
+            <label for="Date">Date</label><br />
+            <input type="Date" />
+          </div>
+          <div class="form-input">
+            <label for="title">Title</label><br />
+            <input type="Text" />
+          </div>
+        </div>
+        <label for="tododetails" class="todoInput">Todo Details</label><br />
+        <textarea name="" id="" cols="30" rows="10"></textarea><br />
+        <button type="submit" class="todoBtn">Save</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

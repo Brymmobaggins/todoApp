@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myTodo | Register</title>
+    <link rel="stylesheet" href="Register.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="">
+        <h1 class="title">myTodo</h1>
+      </a>
+      <div class="nav-items">
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="createtodo.html">Create Todo</a></li>
+          <li class=""><a href="">My Todos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <h3>Please Register to continue</h3>
+      <form action="https://api.uatdrive.com:1012/users/signup" id="myform" method="GET">
+        <label for="Email">Email</label>
+        <input type="text" id="email" name="email" required/>
+        <label for="Password">Password</label>
+        <input type="password" name="password" id="password" required/>
+        <label for="Retype Password">Retype Password</label>
+        <input type="password" id="rePassword" name="rePassword" required/>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <script>
+      const url = 'https://api.uatdrive.com:1012/users/signup';
+      const formEl = document.querySelector('form') 
+      formEl.addEventListener('submit',(e)=>{
+        e.preventDefault()
+      })
+    </script>
+  </body>
+</html>
