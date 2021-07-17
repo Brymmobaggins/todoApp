@@ -20,7 +20,7 @@ li {
 }
 .navbar {
   font-size: 20px;
-  padding: 2.563rem 5rem;
+  padding: 1.563rem 5rem;
   background-color: aliceblue;
   display: flex;
   align-items: center;
@@ -34,15 +34,16 @@ li {
 .nav-items ul li:not(:last-child) {
   padding-right: 3.125rem;
 }
- main {
+.nav-items a:hover {
+  cursor: pointer;
+  color: #34856a;
+}
+
+main {
   max-width: 1100px;
-} 
+}
 h3 {
   margin: 2rem 0rem 2rem 5rem;
-}
-.container {
-  /* border: 1px solid black; */
-  /* width: 100%; */
 }
 .row {
   display: grid;

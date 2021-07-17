@@ -24,3 +24,7 @@ form.addEventListener("submit", (e) => {
     matchElement.innerText = matchMessage;
   }
 });
+function myfunction() {
+  window.location = "createtodo.html"
+  setTimeout("myfunction()", 2000);
+}

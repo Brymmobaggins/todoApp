@@ -19,7 +19,7 @@ li {
 }
 .navbar {
   font-size: 20px;
-  padding: 2.563rem 5rem;
+  padding: 1.563rem 5rem;
   background-color: aliceblue;
   display: flex;
   align-items: center;
@@ -34,6 +34,11 @@ li {
 .nav-items ul li:not(:last-child) {
   padding-right: 3.125rem;
 }
+.nav-items a:hover {
+  cursor: pointer;
+  color: #34856a;
+}
+
 .container {
   height: 450px;
   width: 35%;
