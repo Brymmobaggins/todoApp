@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myTodo | Register</title>
     <link rel="stylesheet" href="Register.css" />
+    <script defer src="register.js"></script>
   </head>
   <body>
     <div class="navbar">
-      <a href="">
-        <h1 class="title">myTodo</h1>
-      </a>
+      <h1 class="title">myTodo</h1>
       <div class="nav-items">
         <ul>
           <li><a href="login.html">Login</a></li>
@@ -20,48 +19,18 @@
     </div>
     <div class="container">
       <h3>Please Register to continue</h3>
-      <form action="" id="myform" method="POST">
+      <form action="#" id="myform" method="">
         <label for="Email">Email</label>
         <input type="email" id="email" name="email" required />
         <label for="Password">Password</label>
         <input type="password" name="password" id="password" required />
+        <span id="error" style="color: red; padding-top: 10px"></span>
         <label for="Retype Password">Retype Password</label>
         <input type="password" id="rePassword" name="rePassword" required />
+        <span id="match" style="color: red; padding-top: 10px"></span>
+
         <button type="submit">Login</button>
       </form>
     </div>
-    <script>
-      const email = document.getElementById("email");
-      const password = document.getElementById("password");
-      const password2 = document.getElementById("password2");
-      const form = document.getElementById("myform");
-      const errorElement = document.getElementById("error");
-
-      form.addEventListener("submit", (e) => {
-        let message = [];
-
-        if (password.value.length <= 6) {
-          message.push("pass");
-        }
-        if (password.value.length <= 15) {
-          message.push("password must be longer than 20 characters");
-        }
-
-        if (message.length > 0) {
-          e.preventDefault();
-          errorElement.innerText = message.join(",");
-        }
-      });
-
-      // // const url = "https://api.uatdrive.com:1012/users/signup";
-      // const formEl = document.querySelector("form");
-      // formEl.addEventListener("submit", (e) => {
-      //   e.preventDefault();
-      //   // alert("alert");
-      //   const formData = new FormData(formEl);
-      //   const formDataSerialized = object.fromEntries(formData)
-      //   console.log(formDataSerialized, "formDataserialized")
-      // });
-    </script>
   </body>
 </html>
