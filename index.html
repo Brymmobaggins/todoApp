@@ -22,13 +22,18 @@
     <div class="container">
       <!-- <span id="sucess" style="color: green; font-weight: bold" ></span> -->
       <h3>Please Login to continue</h3>
-      <form action="#" id="myform">
+      <form action="#" id="myform" onsubmit="login(event)">
         <label for="Email">Email</label>
-        <input type="email" name="email" id="email" required />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+        />
         <label for="Password">Password</label>
         <input type="password" name="password" id="password" required />
         <span id="error" style="color: red; padding-top: 10px"></span>
-        <button type="submit" name="submit">Login</button>
+        <button type="">Login</button>
       </form>
     </div>
   </body>
