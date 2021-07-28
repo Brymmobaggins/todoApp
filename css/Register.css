@@ -16,6 +16,7 @@ ul,
 li {
   list-style: none;
   color: #000000;
+  letter-spacing: 1px;
 }
 .navbar {
   font-size: 20px;
@@ -40,7 +41,7 @@ li {
 }
 
 .container {
-  height: 450px;
+  height: 400px;
   width: 35%;
   margin: 4rem auto;
 }
@@ -51,7 +52,7 @@ form {
 label[for="Email"],
 label[for="Password"],
 label[for="Retype Password"] {
-  margin-top: 33px;
+  margin-top: 30px;
   margin-bottom: 5px;
   display: block;
 }
