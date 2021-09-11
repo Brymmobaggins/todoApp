@@ -1,5 +1,3 @@
-
-
 function send() {
   fetch('https://api.uatdrive.com:1012/users/signup',
     {
